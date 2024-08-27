@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>te amo morena
+    <title></title>
+    <style>
+    body{
+        background-color: red;
+    }
+    .painel {
+        margin: auto;
+        background-color: white;
+        width: 600px;
+        height:600px;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 50px; 
+        font-family: Arial, Helvetica, sans-serif;
+}
+#sim{                                              
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: white;  
+    border-radius: 20px;
+    color: white;
+    margin-left: -60px;
+    
+    
+    
+}
+
+
+#nao { 
+
+    position:absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: white;  
+    border-radius: 20px;
+color: white;
+
+
+
+
+}
+</style>
+</head>
+<body>
+    <div class="painel">
+        <h1>Te Amo meu amor!!</h1>
+        <img src="https://www.orkugifs.com/images/apaixonado_3896.gif" height="200"width="300"="">
+        <h5>aceita passar o resto da vida comigo??</h5>
+        
+        
+        
+       <a href="https://www.youtube.com/shorts/KAVJWrvn_OA"><button id="sim">Sim!</button></a>
+        <button onmouseover="fuja()" id="nao">Não!</button>
+
+    </div>
+    <script>
+      function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+    
+
+
+
+
+    }
+
+</script>
+    
+    </body>
+
+</html>
